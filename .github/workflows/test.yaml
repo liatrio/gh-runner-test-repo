@@ -1,0 +1,13 @@
+name: "Testing 1-2-3"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  echo:
+    runs-on: [self-hosted, caf, prod, terraform]
+
+    steps:
+      - name: Beeping
+        run: echo boop
+
